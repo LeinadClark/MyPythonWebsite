@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    font-family: "Roboto Slab", cursive;
+    font-weight: 400;
+}
+
+body {
+    background-image: url('citybg.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: rgba(102, 108, 154, 0.6);
+    backdrop-filter: blur(3px);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    flex-flow: row nowrap;
+    
+}
+
+h1 {
+
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: calc(100% - 22px);
+    max-width:300px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #2c5aaf;
+    border-radius: 4px;
+    background-color: #405b98;
+}
+
+button {
+    width: 100%;
+    max-width:300px;
+    padding: 10px;
+    background-color: #4a5961; 
+    color: #f5f5f5;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #669cbcaa;
+    transform: scale(1.2) translateY(-2px);
+    box-shadow: 0 0 25px #7488e9;
+}
+
+.hidden {
+    display: none;
+}
+
+#results p {
+    margin-top: 20px; 
+    padding: 20px;
+    background-color: #f39e6a; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(33, 18, 18, 0.1); 
+    font-size: 20px;
+    margin: 5px 0;
+    max-width:270px;
+}
+
+@keyframes animationSparkle {
+    0% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translate(100px, 50vh);
+    }
+}
+
+#container2 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(citybg.gif);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container2 .wrapper .display h1 {
+    color: #8a3fb1;
+    padding: 10px;
+    padding-bottom: 20px;
+}
