@@ -81,20 +81,6 @@ button:hover {
     max-width:270px;
 }
 
-@keyframes animationSparkle {
-    0% {
-        transform: translate(0, 0);
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-        transform: translate(100px, 50vh);
-    }
-}
-
 #container2 {
     position: relative;
     width: 100%;
